@@ -1,0 +1,17 @@
+$mainBlack: hsla(0, 0%, 0%, 0.932);
+$mainGrey: #5a5a58;
+$mainBlue: #2f5572;
+$mainGreen: rgb(51, 87, 42);
+$mainWhite: hsla(0, 11%, 95%, 0.932);
+$mainOrange: hsla(41, 96%, 54%, 0.932);
+$mainRed: hsla(9, 96%, 54%, 0.932);
+$mainPurple: hsla(286, 96%, 54%, 0.932);
+$smallerFont: 60%;
+$lightBlack: hsla(0, 12%, 10%, 0.932);
+$lightGrey: hsla(0, 0%, 37%, 0.397);
+$lightBlue: #61ade7;
+$lightGreen: rgb(149, 223, 130);
+$lightWhite: hsla(0, 12%, 95%, 0.514);
+$lightOrange: hsla(41, 89%, 73%, 0.932);
+$lightRed: hsla(9, 100%, 74%, 0.932);
+$lightPurple: hsla(286, 97%, 72%, 0.932);

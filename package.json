@@ -1,24 +1,25 @@
 {
-  "name": "travel-site-files",
-  "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/coalcanvas/spiritual-site.git"
-  },
-  "keywords": [],
-  "author": "Amy <ansb1987@gmail.com>",
-  "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/coalcanvas/spiritual-site/issues"
-  },
-  "homepage": "https://github.com/coalcanvas/spiritual-site#readme",
-  "dependencies": {
-    "lodash": "^4.17.20",
-    "normalize.css": "^8.0.1"
-  }
+    "name": "spiritual-site",
+    "version": "1.0.0",
+    "scripts": {
+        "dev": "webpack serve",
+        "test": "echo \"Error: no test specified\" && exit 1"
+    },
+    "dependencies": {
+        "lazysizes": "^5.3.0",
+        "normalize.css": "^8.0.1"
+    },
+    "devDependencies": {
+        "autoprefixer": "^10.2.3",
+        "css-loader": "^5.0.0",
+        "postcss-import": "^14.0.0",
+        "postcss-loader": "^4.1.0",
+        "postcss-mixins": "^6.2.3",
+        "postcss-nested": "^5.0.3",
+        "postcss-simple-vars": "^6.0.2",
+        "style-loader": "^2.0.0",
+        "webpack": "^5.3.0",
+        "webpack-cli": "^4.1.0",
+        "webpack-dev-server": "^3.11.2"
+    }
 }

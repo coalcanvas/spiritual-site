@@ -12,6 +12,8 @@
 node_modules/
 .tmp/
 
+*.jpg
+
 # OS or Editor folders
 .DS_Store
 Thumbs.db

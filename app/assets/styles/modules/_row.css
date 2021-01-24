@@ -1,0 +1,28 @@
+.row {
+    display: flex;
+    flex-flow: row wrap;
+    &--gutters {
+        margin-right: -65px;
+    }
+    &--gutters>div {
+        padding-right: 65px;
+        order: -1;
+        /* Shift image before other content (in visual order) */
+        align-self: center;
+        /* Center the image cross-wise (horizontally)         */
+    }
+    @add-mixin atMedium {
+        &__medium-4 {
+            width: 33.33%;
+        }
+        &__medium-4--larger {
+            width: 37%;
+        }
+        &__medium-8 {
+            width: 66.67%;
+        }
+        &__medium-8--smaller {
+            width: 63%;
+        }
+    }
+}
