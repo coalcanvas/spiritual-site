@@ -1,0 +1,21 @@
+.feature-item {
+    display: flex;
+    justify-items: center;
+    flex-wrap: wrap;
+    &__icon {
+        display: block;
+        margin: 0 auto;
+        width: 100px;
+    }
+    &__title {
+        font-size: 2.225rem;
+        text-align: center;
+        vertical-align: text-bottom;
+        font-weight: 200;
+        height: 15%;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0.5em 0 1em 0;
+        background-color: $lightBlack;
+    }
+}

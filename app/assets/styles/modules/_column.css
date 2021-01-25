@@ -1,0 +1,39 @@
+.column {
+    display: inline-flex;
+    flex-flow: column wrap;
+    overflow: auto;
+    &--gutters {
+        margin-right: -100px;
+        justify-content: space-around;
+    }
+    &--centered {
+        text-align: center;
+        margin: auto 0;
+    }
+    &--border-thin {
+        padding: 20px;
+        margin-right: 50px;
+        border: 0.1em solid $lightGrey;
+        border-radius: 10px;
+    }
+    &__icon {
+        width: 150px;
+    }
+    @add-mixin atMedium {
+        &__small-3 {
+            width: 25%;
+        }
+        &__medium-4 {
+            width: 33.33%;
+        }
+        &__medium-4--larger {
+            width: 37%;
+        }
+        &__medium-8 {
+            width: 66.67%;
+        }
+        &__medium-8--smaller {
+            width: 63%;
+        }
+    }
+}
