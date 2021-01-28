@@ -1,0 +1,181 @@
+section {
+    display: block;
+}
+
+hr {
+    width: 30%;
+    border: 0.1px solid hsla(0, 2%, 57%, 0.308);
+    margin-block: 0.5em;
+    margin-bottom: -0.9em;
+    margin-left: 80px;
+}
+
+.fa {
+    position: relative;
+    display: inline-block;
+    font: normal normal normal 24px/1 FontAwesome;
+    font-size: inherit;
+    text-rendering: auto;
+    -webkit-transform: translate(0, 0);
+    transform: translate(0, 0);
+    text-align: center;
+    vertical-align: middle;
+    padding-left: 10px;
+}
+
+.fa-2x {
+    font-size: 2em;
+}
+
+.main-menu:hover,
+nav.main-menu.expanded {
+    width: 200px;
+    overflow: visible;
+}
+
+.main-menu {
+    background: hsla(0, 1%, 13%, 0.397);
+    position: fixed;
+    backdrop-filter: blur(9px);
+    top: 3px;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    padding-left: 3px;
+    width: 5px;
+    overflow: hidden;
+    -webkit-transition: width 0.5s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: width 0.5s 0.1s cubic-bezier(0.645, 0.045, 0.355, 1);
+    -webkit-transform: translateZ(0) scale(1, 1);
+    z-index: 200;
+}
+
+.main-menu:hover,
+.main-menu:focus,
+.main-menu:active,
+nav.main-menu.expanded {
+    width: 200px;
+    overflow: visible;
+}
+
+.main-menu>ul {
+    margin: 14px 0;
+}
+
+.main-menu li {
+    position: relative;
+    padding-top: 3px;
+    padding-bottom: 20px;
+    padding-left: 8px;
+    display: block;
+    width: 190px;
+}
+
+.main-menu li>a {
+    position: relative;
+    display: table;
+    border-collapse: collapse;
+    border-spacing: 0;
+    color: rgba(219, 212, 212, 0.473);
+    font-family: inherit;
+    font-size: 14px;
+    text-decoration: none;
+    -webkit-transform: translateZ(0) scale(1, 1);
+    -webkit-transition: all 0.5s 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+    transition: all 0.5s 0.5s cubic-bezier(0.645, 0.045, 0.355, 1);
+}
+
+.main-menu .nav-icon {
+    position: relative;
+    display: table-cell;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 18px;
+    border-radius: 3px;
+}
+
+span .nav-text:hover::before {
+    transition-delay: 0.5s;
+}
+
+.main-menu .nav-text {
+    position: relative;
+    display: table-cell;
+    vertical-align: middle;
+    width: 140px;
+    font-family: "EccentricFont", Fallback, sans-serif;
+}
+
+.main-menu>ul.logout {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+}
+
+.no-touch .scrollable.hover {
+    overflow-y: hidden;
+}
+
+.no-touch .scrollable.hover:hover {
+    overflow-y: auto;
+    overflow: visible;
+}
+
+a:hover,
+a:focus {
+    text-decoration: none;
+}
+
+nav {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -o-user-select: none;
+    user-select: none;
+    padding-top: 3px;
+}
+
+nav ul,
+nav li {
+    outline: 0;
+    margin: 0;
+    height: 10vh;
+    @add-mixin atMedium {
+        height: 13vh;
+    }
+}
+
+.main-menu li:hover>a,
+nav.main-menu li.active>a,
+.dropdown-menu>li>a:hover,
+.dropdown-menu>li>a:focus,
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:hover,
+.dropdown-menu>.active>a:focus,
+.no-touch .dashboard-page nav.dashboard-menu ul li:hover a,
+.dashboard-page nav.dashboard-menu ul li.active a {
+    color: hsla(300, 6%, 84%, 0.788);
+    background-color: hsla(300, 5%, 4%, 0.45);
+    border-radius: 5px;
+    transition-delay: -0.05s;
+    animation-duration: 0.05s;
+}
+
+li {
+    text-align: -webkit-match-parent;
+}
+
+ul.logout {
+    padding-top: 500px;
+    @add-mixin atSmall {
+        padding-top: 230px;
+    }
+    @add-mixin atMedium {
+        padding-top: 480px;
+    }
+    @add-mixin atLarge {
+        padding-top: 580px;
+    }
+}

@@ -1,0 +1,23 @@
+.progress-bar {
+    height: 3px;
+    width: 0%;
+    background-color: hsla(273, 90%, 67%, 0.87);
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    animation: progress 1s linear;
+    /* Pause the animation */
+    animation-play-state: paused;
+    /* Bind the animation to scroll */
+    animation-delay: calc(var(--scroll) * -1s);
+    /* These last 2 properites clean up overshoot weirdness */
+    animation-iteration-count: 1;
+}
+
+@keyframes progress {
+    to {
+        background-color: hsla(288, 50%, 96%, 0.45);
+        width: 100%;
+    }
+}

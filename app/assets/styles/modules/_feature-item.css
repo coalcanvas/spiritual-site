@@ -6,16 +6,48 @@
         display: block;
         margin: 0 auto;
         width: 100px;
+        &-position-higher {
+            position: relative;
+            top: -80px;
+        }
+        &-circular-border {
+            border-radius: 50%;
+            border-style: outset;
+        }
     }
     &__title {
         font-size: 2.225rem;
         text-align: center;
         vertical-align: text-bottom;
-        font-weight: 200;
+        font-weight: 100;
         height: 15%;
         vertical-align: middle;
         text-align: center;
         padding: 0.5em 0 1em 0;
         background-color: $lightBlack;
+        &-smaller {
+            font-size: 150%;
+        }
+        &-position-higher {
+            position: relative;
+            top: -80px;
+        }
+    }
+    &__subtitle {
+        font-size: 1.525rem;
+        position: relative;
+        top: -80px;
+        text-align: center;
+        vertical-align: text-bottom;
+        font-weight: 100;
+        height: 15%;
+        vertical-align: middle;
+        text-align: center;
+        padding: 0.5em 0 1em 0;
+        background-color: $lightBlack;
+        &-position-higher {
+            position: relative;
+            top: -80px;
+        }
     }
 }

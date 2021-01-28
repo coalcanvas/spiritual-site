@@ -6,10 +6,13 @@
         padding: 4.5rem 0;
     }
     &--gradient-bg {
-        background: -webkit-linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-        /* Chrome 10-25, Safari 5.1-6 */
-        background: linear-gradient(to bottom, #0f2027, #203a43, #2c5364);
-        /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+        background-color: #2d3436;
+        background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
         color: $mainWhite;
+    }
+    &--featured-stories {
+        background: $darkBraun;
+        background: $darkBraun2;
+        background-blend-mode: lighten;
     }
 }

@@ -1,0 +1,19 @@
+.features {
+    padding: 0 1.8125rem 1px 1.8125rem;
+    &__photo {
+        position: relative;
+        border-radius: 30px;
+        overflow: hidden;
+        width: 160px;
+        height: 160px;
+        margin: 0 auto -80 auto;
+        top: -80px;
+    }
+    &__title {
+        color: $mainWhite;
+        text-align: center;
+        font-size: 1.5rem;
+        font-weight: 200;
+        margin: 0;
+    }
+}

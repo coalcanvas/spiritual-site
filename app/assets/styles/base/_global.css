@@ -1,11 +1,40 @@
+blockquote,
+body,
+dd,
+div,
+dl,
+dt,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+li,
+ol,
+p,
+pre,
+td,
+textarea,
+th,
+ul {
+    margin: 0;
+    padding: 0;
+}
+
 body {
     background-color: rgba(255, 255, 255, 0.815);
+    display: block;
     max-width: 100vw;
     margin: 0;
     padding: 0;
     color: hsla(0, 0%, 0%, 0.932);
     font-family: "Fira Sans", sans-serif;
     text-shadow: 3px 3px 3px rgb(196, 177, 177);
+    z-index: 222;
 }
 
 *,
@@ -31,4 +60,9 @@ video {
 
 a {
     color: $lightGreen;
+}
+
+* {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }

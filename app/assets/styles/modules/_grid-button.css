@@ -1,0 +1,23 @@
+.grid-button {
+    padding: $base * 2; //2rem
+    cursor: pointer;
+    user-select: none;
+}
+
+.grid-button .grid {
+    width: $base;
+    height: $base;
+    background: $pearlWhite;
+    color: $pearlWhite;
+    /* Not in use when the colors are specified below */
+    transition: $transition;
+}
+
+.grid-button.rearrange .grid {
+    box-shadow: -($base + $space) 0 - ($base + $space), 0 0 - ($base + $space), ($base + $space) (-($base + $space)), -($base + $space) 0, $base + $space 0, -($base + $space) ($base + $space), 0 ($base + $space), ($base + $space) ($base + $space);
+}
+
+.grid-button.rearrange.close .grid {
+    box-shadow: 0 0 -$base, 0 0 -$base * 2, $base 0, -$base * 2 0, $base * 2 0, -$base 0, 0 $base * 2, 0 $base;
+    transform: rotate3d(0, 0, 1, -45deg) scale3d(0.8, 0.8, 0.8);
+}
