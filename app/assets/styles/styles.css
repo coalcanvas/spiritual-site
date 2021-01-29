@@ -18,4 +18,6 @@
 @import "modules/_left-nav.css";
 @import "modules/_progress-bar.css";
 @import "modules/_site-footer.css";
+@import "modules/_site-header.css";
+@import "modules/_primary-nav.css";
 @import "https://fonts.googleapis.com/css2?family=Pragati+Narrow:wght@400;700&display=swap";

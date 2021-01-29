@@ -1,0 +1,55 @@
+.primary-nav {
+    padding-top: 10px;
+    &--pull-right {
+        @add-mixin atMedium {
+            padding-top: 0;
+            float: right;
+        }
+        @add-mixin atLarge {
+            padding-top: 0;
+            float: right;
+        }
+    }
+    ul {
+        margin: 0;
+        padding: 0;
+        @add-mixin clearfix;
+    }
+    li {
+        list-style: none;
+        padding-right: 20px;
+        display: inline-block;
+        @add-mixin atMedium {
+            float: left;
+            display: block;
+        }
+        @add-mixin atLarge {
+            float: left;
+            display: block;
+        }
+    }
+    a {
+        color: $lightWhite;
+        text-decoration: none;
+        font-weight: 300;
+        padding: 5px 8px;
+        font-size: 0.8rem;
+        box-shadow: $boxShadow;
+        border-radius: 10px;
+        transition: all 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+        &:hover {
+            background-color: $lightWhite;
+            color: $mainGrey;
+        }
+        @add-mixin atMedium {
+            padding: 5px 8px;
+            font-size: 1rem;
+            background-color: transparent;
+        }
+        @add-mixin atLarge {
+            padding: 5px 8px;
+            font-size: 1rem;
+            background-color: transparent;
+        }
+    }
+}

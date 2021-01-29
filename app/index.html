@@ -17,33 +17,47 @@
 </script>
 
 <body>
-    <header>
-        <img class="logo" src="./assets/images/icons/zenyaga-logo.svg" />
-        <a href="#" class="btn">get in touch</a>
-        <nav>
-            <ul>
-                <li><a href="#our-beginning">Our Beginning</a></li>
-                <li><a href="#features">Features</a></li>
-                <li><a href="#testimonials">Testimonials</a></li>
-            </ul>
-        </nav>
+    <header class="site-header">
+        <div class="wrapper">
+            <div class="site-header__logo">
+                <img src="./assets/images/icons/zenyaga-logo.svg" /> zenyaga.com
+            </div>
+
+            <div class="site-header__hamburger">
+
+                <div class="site-header__hamburger-mid"></div>
+
+            </div>
+            <div class="site-header__menu-content">
+                <div class="site-header__btn-container">
+                    <a href="#" class="site-header__btn">get in touch</a>
+                </div>
+                <nav class="primary-nav primary-nav--pull-right">
+                    <ul>
+                        <li><a href="#our-beginning">Our Beginning</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#testimonials">Testimonials</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
     </header>
 
     <div class="large-hero">
         <picture>
             <source sizes="1000px" data-srcset="
-            https://images.pexels.com/photos/4555613/pexels-photo-4555613.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260
+            https://images.pexels.com/photos/1329917/pexels-photo-1329917.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=1260
           " media="--large" class="lazyload" />
             <source sizes="720px" data-srcset="
-            https://images.pexels.com/photos/4555613/pexels-photo-4555613.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=940
+            https://images.pexels.com/photos/1329917/pexels-photo-1329917.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=940
           " media="--medium" class="lazyload" />
             <source sizes="404px" data-srcset="
-            https://images.pexels.com/photos/4555613/pexels-photo-4555613.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500,
-            https://images.pexels.com/photos/4555613/pexels-photo-4555613.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=1000 2x
+            https://images.pexels.com/photos/1329917/pexels-photo-1329917.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500,
+            https://images.pexels.com/photos/1329917/pexels-photo-1329917.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=1000 2x
           " media="--small" class="lazyload" />
             <img srcset="
-            https://images.pexels.com/photos/4555613/pexels-photo-4555613.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500 1x,
-            https://images.pexels.com/photos/4555613/pexels-photo-4555613.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=1000 2x
+            https://images.pexels.com/photos/1329917/pexels-photo-1329917.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500 1x,
+            https://images.pexels.com/photos/1329917/pexels-photo-1329917.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=1000 2x
           " alt="Photography Of Waterfalls Between Trees" class="large-hero__img" />
         </picture>
 
@@ -55,7 +69,7 @@
                     <span class="large-hero__description">(Young & Gifted, Always...Trying).</span
             >
           </h2>
-          <p class="__tagline">
+          <p class="large-hero__tagline">
             ...new things to deliver the |◀ expansion ▶| of FUN but in a
             slightly conscious-er way one step at a time.
           </p>

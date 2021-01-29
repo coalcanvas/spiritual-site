@@ -1,14 +1,27 @@
 .large-hero {
     position: relative;
+    background-color: $mainBlack;
     border-bottom: 10px solid $lightWhite;
-    margin-top: calc(-5% - 80px);
+    @add-mixin atMedium {
+        top: 37px;
+    }
+    @add-mixin atLarge {
+        margin-top: -67px;
+    }
     &__text-content {
         position: absolute;
-        top: 45%;
-        left: 0;
+        top: 60%;
+        left: -5%;
         text-align: center;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
+        @add-mixin atMedium {
+            left: 10%;
+        }
+        @add-mixin atLarge {
+            left: 22%;
+            top: 45%;
+        }
     }
     &--video {
         position: absolute;
@@ -27,24 +40,32 @@
         width: 30px;
         height: auto;
         &--box {
-            border-radius: 8px;
+            width: 30px;
+            background-color: $mainWhite;
+            border-radius: 15px;
         }
     }
     &__title {
         margin: 0;
-        background-color: $lightBlue;
+        background-color: $nightClub2;
         font-family: "ModuloRegular";
         color: $lightWhite;
-        font-weight: 300;
+        font-weight: 100;
         font-size: 2rem;
         @add-mixin atSmall {
-            font-size: 3.4rem;
+            font-size: 1.2rem;
+        }
+        @add-mixin atMedium {
+            font-size: 1.8rem;
+        }
+        @add-mixin atLarge {
+            font-size: 2rem;
         }
     }
     &__subtitle {
         margin: 0;
         color: $lightWhite;
-        background-color: $lightRed;
+        background-color: $sweetAiran;
         font-family: "ModuloRegular";
         font-weight: 300;
         font-size: 1.5rem;
@@ -53,16 +74,21 @@
         color: $lightWhite;
         font-size: 1.1rem;
         @add-mixin atSmall {
-            font-size: 1.875rem;
+            font-size: 1.175rem;
         }
     }
-}
-
-.__tagline {
-    font-weight: 300;
-    color: $mainWhite;
-    background-color: $lightGreen;
-    opacity: 0.8;
-    font-size: 0.8rem;
-    margin: 0 5rem 0 5rem;
+    &__tagline {
+        position: relative;
+        left: -15px;
+        font-weight: 200;
+        color: $mainWhite;
+        background-color: $lightWhite;
+        opacity: 0.8;
+        width: 70%;
+        font-size: 0.8rem;
+        margin: 0 5rem 0 5rem;
+        @add-mixin atLarge {
+            left: 50px;
+        }
+    }
 }
