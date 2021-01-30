@@ -10,6 +10,11 @@
         background-color: hsla(0, 0%, 1%, 0.349);
         backdrop-filter: blur(3px);
     }
+    &__brand-name {
+        font-family: "ModuloRegular";
+        color: $pearlWhite;
+        &--is-hidden {}
+    }
     @add-mixin atMedium {
         background-color: rgba($mainGrey, 0.3);
         height: 5%;
@@ -35,20 +40,35 @@
     }
     &__logo {
         top: 0;
-        left: 50%;
+        left: 13%;
         font-family: "ModuloRegular";
-        display: flex;
+        display: inline-block;
         flex-direction: column;
         color: $lightWhite;
         position: absolute;
         transform: translateX(-50%);
-        background-color: hsla(0, 12%, 95%, 0.349);
         margin-top: -10px;
-        padding: 13px 29px;
-        @add-mixin atMedium {
-            left: auto;
-            transform: translateX(0);
-            padding: 25px 36px;
+        border-radius: 50%;
+        width: 15px;
+        &-smaller {
+            position: absolute;
+            top: 25px;
+            margin-left: 67px;
+            width: 1em;
+            border-radius: 50%;
+            @add-mixin atSmall {
+                transform: translateX(25%);
+            }
+            @add-mixin atMedium {
+                left: 43px;
+                left: auto;
+                transform: translateX(0);
+                padding: 25px 36px;
+            }
+            @add-mixin atLarge {
+                left: 45px;
+                transform: translateX(-50%);
+            }
         }
     }
     &__hamburger {
