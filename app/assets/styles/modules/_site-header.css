@@ -3,71 +3,96 @@
     top: 0;
     left: 0;
     width: 100%;
-    position: absolute;
+    position: fixed;
     z-index: 2;
-    transition: background-color 0.7s cubic-bezier(0.47, 0, 0.745, 0.715);
+    transition: background-color 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+    @add-mixin atSmall {
+        position: fixed;
+        background-color: $lightGrey;
+        height: 5%;
+        &--dark {
+            background-color: hsla(0, 5%, 71%, 0.549);
+        }
+    }
+    @add-mixin atMedium {
+        position: fixed;
+        background-color: $lightGrey;
+        height: 5%;
+        &--dark {
+            background-color: hsla(0, 5%, 71%, 0.549);
+        }
+    }
+    @add-mixin atLarge {
+        background-color: rgba($mainBlack, 0.3);
+        height: 5%;
+    }
     &--is-expanded {
         background-color: hsla(0, 0%, 1%, 0.349);
         backdrop-filter: blur(3px);
     }
     &__brand-name {
+        left: 10%;
         font-family: "ModuloRegular";
+        padding-left: 80px;
+        transform: scale(1.05);
+        transition: transform 0.3s 0.7s cubic-bezier(0.47, 0, 0.745, 0.715);
         color: $pearlWhite;
-        &--is-hidden {}
-    }
-    @add-mixin atMedium {
-        background-color: rgba($mainGrey, 0.3);
-        height: 5%;
-    }
-    @add-mixin atLarge {
-        background-color: rgba($mainGrey, 0.3);
-        height: 5%;
+        @add-mixin atMedium {
+            .site-header--dark & {
+                margin-left: -180px;
+                transform: scale(0.78);
+            }
+        }
     }
     &__btn-container {
-        @add-mixin atSmall {
-            display: none;
-        }
+        box-shadow: $boxShadow;
+        width: 200px;
+        margin-left: 80px;
+        margin-top: -53px;
+        @add-mixin atSmall {}
         @add-mixin atMedium {
             float: right;
         }
     }
     &__btn {
-        padding: 6px 8px;
+        padding: 2px 2px;
+        justify-self: center;
+        padding-right: 20px;
+        margin-left: -20px;
         border-radius: 10px;
+        margin-top: -60px;
+        right: 5%;
+        width: 100px;
+        box-sizing: content-box;
         text-decoration: none;
-        color: $lightWhite;
-        box-shadow: $boxShadow;
+        color: $lightBlack;
     }
     &__logo {
         top: 0;
-        left: 13%;
+        left: 20%;
         font-family: "ModuloRegular";
         display: inline-block;
         flex-direction: column;
-        color: $lightWhite;
         position: absolute;
         transform: translateX(-50%);
-        margin-top: -10px;
         border-radius: 50%;
         width: 15px;
         &-smaller {
             position: absolute;
             top: 25px;
-            margin-left: 67px;
+            margin-left: 80px;
             width: 1em;
             border-radius: 50%;
             @add-mixin atSmall {
                 transform: translateX(25%);
             }
             @add-mixin atMedium {
-                left: 43px;
-                left: auto;
                 transform: translateX(0);
                 padding: 25px 36px;
             }
             @add-mixin atLarge {
                 left: 45px;
-                transform: translateX(-50%);
+                transform: translateX(-40%);
             }
         }
     }

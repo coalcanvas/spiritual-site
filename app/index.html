@@ -6,6 +6,7 @@
     <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/handelgothictl-regular" type="text/css" />
     <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/modulo" type="text/css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" media="screen" href="http://fontlibrary.org/face/averia-serif" type="text/css" />
     <title>Welcome to zenYāga.com | याग ☯</title>
@@ -17,30 +18,30 @@
 </script>
 
 <body>
-    <header class="site-header">
+    <header class="site-header site-header--dark">
         <div class="wrapper">
 
-            <h2 class="site-header__brand-name site-header__brand-name">
-                <div class="site-header__logo">
-                    <img class="site-header__logo-smaller" src="./assets/images/icons/slicesofzen2.png" />
-                </div>zenyaga.com</h2>
-            <div class=" site-header__hamburger ">
+            <h2 class="site-header__brand-name">
+                zenyaga.com
+            </h2>
+        </div>
+        <div class="site-header__hamburger ">
 
-                <div class="site-header__hamburger-mid "></div>
+            <div class="site-header__hamburger-mid"></div>
 
+        </div>
+        <div class="site-header__menu-content">
+            <div class="site-header__btn-container">
+                <a href="# " class="btn">get in touch</a>
             </div>
-            <div class="site-header__menu-content ">
-                <div class="site-header__btn-container ">
-                    <a href="# " class="site-header__btn ">get in touch</a>
-                </div>
-                <nav class="primary-nav primary-nav--pull-right ">
-                    <ul>
-                        <li><a href="#our-beginning ">Our Beginning</a></li>
-                        <li><a href="#features ">Features</a></li>
-                        <li><a href="#testimonials ">Testimonials</a></li>
-                    </ul>
-                </nav>
-            </div>
+            <nav class="primary-nav primary-nav--pull-right">
+                <ul>
+                    <li><a href="#our-beginning" id="our-beginning-link">Our Beginning</a></li>
+                    <li><a href="#features" id="features-link">Features</a></li>
+                    <li><a href="#stories" id="stories-link">Stories</a></li>
+                </ul>
+            </nav>
+        </div>
         </div>
     </header>
 
@@ -72,7 +73,7 @@
       </div>
     </div>
 
-    <div id="our-beginning " class="page-section ">
+    <div id="our-beginning" class="page-section " data-matching-link="#our-beginning-link">
       <div class="wrapper ">
         <h2
           class="headline headline--centered headline--light headline--b-margin-small "
@@ -111,7 +112,7 @@
             </picture>
           </div>
           <div class="row__medium-8 row__medium-8--smaller ">
-            <h2 class="headline section-title section-title-smaller section-title-gut-bottom ">Here&rsquo;s how it all began&hellip;</h2>
+            <h2 class="headline section-title section-title-smaller section-title-gut-bottom" >Here&rsquo;s how it all began&hellip;</h2>
             <div class="generic--large-gutter ">
                 <p>
                 As wanderlusts and global citizens, we would urge ourselves to travel the world whether it be for leisure or self-discovery. Exchanging life stories with fellow globetrotters is typically the crescendo of my journey. Few things I have learned: people are chiefly good, circumstances force us to be otherwise, and there's depth of experience in each and every one of us.
@@ -131,7 +132,7 @@
       </div>
     </div>
 
-    <div id="features " class="page-section page-section--gradient-bg ">
+    <div id="features" class="page-section page-section--gradient-bg" data-matching-link="#features-link">
       <div class="wrapper ">
         
         <h2 class="section-title ">
@@ -195,7 +196,7 @@
       </div>
     </div>
     
-            <div id="features " class="page-section page-section--gradient-bg ">
+            <div id="stories" class="page-section page-section--gradient-bg" data-matching-link="#stories-link">
       <div class="wrapper ">
      
               <h2 class="section-title section-title--white section-title-margin-left section-title-gut-bottom "> <img class="section-title__icon " src="./assets/images/icons/noun_fascinating story_1684931.svg " />Featured <strong>Stories</strong></h2>
@@ -322,7 +323,7 @@
                         <div class="wrapper ">
                             <p><span class="site-footer__text ">
                                 Copyright &copy; 2021 Blason Tech. All rights reserved.</span>
-                                <a href="# " class="btn btn--white ">Get in Touch</a>
+                                <a href="# " class="btn btn--white">Get in Touch</a>
                             </p>
                         </div>
                     </footer>

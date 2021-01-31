@@ -1,17 +1,20 @@
 .btn {
-    background-color: $mainBlue;
+    background-color: transparent;
+    box-shadow: $boxShadow;
     margin-top: 20px;
     top: 5%;
-    width: 20%;
     height: auto;
     width: 150px;
-    color: #fff;
+    color: rgba(250, 255, 249, 0.438);
     text-decoration: none;
     border-radius: 5px;
-    padding: 0.75rem 1rem;
+    padding: 0.5rem 0.5rem;
     display: inline-block;
     &--white {
         background-color: $lightWhite;
+    }
+    &--transparent {
+        background-color: transparent;
     }
     &--large {
         font-size: 80%;

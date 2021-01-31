@@ -54,7 +54,7 @@
         box-shadow: $boxShadow;
     }
     &-gut-bottom-top {
-        margin-bottom: 2em;
+        margin-bottom: 4em;
         margin-top: 2em;
         margin-left: 2em;
     }

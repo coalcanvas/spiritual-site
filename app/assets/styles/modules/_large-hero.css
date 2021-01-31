@@ -1,6 +1,6 @@
 .large-hero {
     position: relative;
-    background-color: $mainBlack;
+    background-image: $preDark;
     border-bottom: 10px solid $lightWhite;
     @add-mixin atMedium {
         top: 37px;
@@ -11,15 +11,15 @@
     &__text-content {
         position: absolute;
         top: 60%;
-        left: -5%;
+        left: 0%;
         text-align: center;
         transform: translateY(-50%);
         -webkit-transform: translateY(-50%);
         @add-mixin atMedium {
-            left: 10%;
+            left: 17%;
         }
         @add-mixin atLarge {
-            left: 22%;
+            left: 25%;
             top: 45%;
         }
     }
@@ -37,10 +37,10 @@
     }
     &__logo {
         vertical-align: middle;
-        width: 30px;
+        width: 20px;
         height: auto;
         &--box {
-            width: 30px;
+            width: 20px;
             background-color: $mainWhite;
             border-radius: 15px;
         }
@@ -57,13 +57,16 @@
         }
         @add-mixin atMedium {
             font-size: 1.8rem;
+            margin-left: 5rem;
         }
         @add-mixin atLarge {
             font-size: 2rem;
+            margin-left: 5rem;
         }
     }
     &__subtitle {
-        margin: 0;
+        margin: 10px;
+        margin-left: 1rem;
         color: $lightWhite;
         background-color: $sweetAiran;
         font-family: "ModuloRegular";

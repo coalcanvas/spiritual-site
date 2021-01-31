@@ -1,5 +1,5 @@
 .primary-nav {
-    margin-top: -30px;
+    margin-top: -25px;
     &--pull-right {
         @add-mixin atMedium {
             padding-top: 0;
@@ -17,9 +17,12 @@
     }
     li {
         list-style: none;
+        margin-top: 40px;
         padding-right: 20px;
         display: inline-block;
         @add-mixin atMedium {
+            margin-top: 0;
+            padding-right: 50px;
             float: left;
             display: block;
         }
@@ -30,6 +33,7 @@
     }
     a {
         color: $lightWhite;
+        cursor: pointer;
         text-decoration: none;
         font-weight: 300;
         padding: 5px 8px;
@@ -45,6 +49,10 @@
             padding: 5px 8px;
             font-size: 1rem;
             background-color: transparent;
+            &.is-current-link {
+                background-color: $lightWhite;
+                color: $mainGrey;
+            }
         }
         @add-mixin atLarge {
             padding: 5px 8px;

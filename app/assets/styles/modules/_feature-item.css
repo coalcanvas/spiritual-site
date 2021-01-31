@@ -40,11 +40,10 @@
         text-align: center;
         vertical-align: text-bottom;
         font-weight: 100;
-        height: 15%;
+        height: 10%;
         vertical-align: middle;
         text-align: center;
         padding: 0.5em 0 1em 0;
-        background-color: $lightBlack;
         &-position-higher {
             position: relative;
             top: -80px;
