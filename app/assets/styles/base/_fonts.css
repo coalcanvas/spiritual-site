@@ -1,0 +1,41 @@
+@font-face {
+    font-family: "AveriaSerifBold";
+    src: url("https://fontlibrary.org/face/modulo/assets/fonts/averia-serif/51e3ae7cf61b932c613416e6e0a05e40/32f10ab245c98621bf838a70c414dfa9/AveriaSerifBold.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AveriaSerifBoldItalic";
+    src: url("https://fontlibrary.org/face/modulo/assets/fonts/averia-serif/51e3ae7cf61b932c613416e6e0a05e40/a7197469b75563676e740f49502d8869/AveriaSerifBoldItalic.ttf") format("truetype");
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "AveriaSerifItalic";
+    src: url("https://fontlibrary.org/face/modulo/assets/fonts/averia-serif/51e3ae7cf61b932c613416e6e0a05e40/727e71b0e2c38faa851663a03bc5e594/AveriaSerifItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "AveriaSerifLight";
+    src: url("https://fontlibrary.org/face/modulo/assets/fonts/averia-serif/51e3ae7cf61b932c613416e6e0a05e40/f104f2c9908b2ee6bf57e22e02f176ba/AveriaSerifLight.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "AveriaSerifLightItalic";
+    src: url("https://fontlibrary.org/face/modulo/assets/fonts/averia-serif/51e3ae7cf61b932c613416e6e0a05e40/b3d3870352e2e25a0fabc467ff002fb2/AveriaSerifLightItalic.ttf") format("truetype");
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: "AveriaSerifRegular";
+    src: url("https://fontlibrary.org/face/modulo/assets/fonts/averia-serif/51e3ae7cf61b932c613416e6e0a05e40/ea879dd446f99ced00e0de9e6f641ac7/AveriaSerifRegular.ttf") format("truetype");
+    font-weight: normal;
+    font-style: normal;
+}

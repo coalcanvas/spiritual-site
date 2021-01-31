@@ -9,13 +9,6 @@ html {
     }
 }
 
-@font-face {
-    font-family: "ModuloRegular";
-    src: url("http://fontlibrary.org/face/modulo/assets/fonts/modulo/3b6ec34ffe942400e102d770824c5238/a21ec22d80de665bb9b1076f71a23fcf/ModuloRegular.otf") format("opentype");
-    font-weight: normal;
-    font-style: normal;
-}
-
 blockquote,
 body,
 dd,
