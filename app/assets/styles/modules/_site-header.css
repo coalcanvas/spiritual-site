@@ -47,7 +47,7 @@
     &__btn-container {
         box-shadow: $boxShadow;
         width: 200px;
-        margin-left: 80px;
+        margin-left: 90px;
         margin-top: -53px;
         @add-mixin atSmall {}
         @add-mixin atMedium {

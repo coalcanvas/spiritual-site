@@ -24,6 +24,10 @@
     &--white {
         color: $mainWhite;
     }
+    &--less-margin {
+        margin-bottom: 1.3rem;
+        margin-top: 0;
+    }
     &-margin-left {
         margin-left: 1rem;
     }
