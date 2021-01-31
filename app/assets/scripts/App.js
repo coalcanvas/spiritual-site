@@ -1,8 +1,8 @@
 import "../styles/styles.css";
-import RevealOnScroll from "./modules/RevealOnScroll.js";
 import "lazysizes";
+import "./modules/ls.respimg.js";
+import RevealOnScroll from "./modules/RevealOnScroll.js";
 import MobileMenu from "./modules/MobileMenu.js";
-import "./ls.respimg.js";
 import StickyHeader from "./modules/StickyHeader.js";
 
 new StickyHeader();

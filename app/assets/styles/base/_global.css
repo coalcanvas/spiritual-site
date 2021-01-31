@@ -3,6 +3,12 @@ html {
     -webkit-overflow-scrolling: touch;
 }
 
+@media screen and (prefers-reduced-motion: reduce) {
+    html {
+        scroll-behavior: auto;
+    }
+}
+
 blockquote,
 body,
 dd,
@@ -48,10 +54,13 @@ body {
     box-sizing: border-box;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
 }
 
 img {
     max-width: 100%;
+    border-radius: 10px;
 }
 
 video {
@@ -65,9 +74,4 @@ video {
 
 a {
     color: $lightGreen;
-}
-
-* {
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
 }

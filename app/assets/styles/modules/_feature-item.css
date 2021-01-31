@@ -15,6 +15,9 @@
             border-style: outset;
         }
     }
+    &__gut-bottom {
+        margin-bottom: 2em;
+    }
     &__title {
         font-size: 2.225rem;
         text-align: center;

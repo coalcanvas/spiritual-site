@@ -5,6 +5,16 @@
     margin-left: auto;
     margin-right: auto;
     height: fit-content;
+    transition: transform 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+    &-centered {
+        transform: translateX(0);
+        @add-mixin atMedium {
+            transform: translateX(25%);
+        }
+        @add-mixin atLarge {
+            transform: translateX(30%) scale(1.2);
+        }
+    }
     &--medium {
         max-width: 976px;
     }

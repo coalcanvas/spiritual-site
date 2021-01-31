@@ -1,13 +1,35 @@
 .large-hero {
     position: relative;
-    background-image: $preDark;
-    border-bottom: 10px solid $lightWhite;
-    @add-mixin atMedium {
-        top: 37px;
+    height: 75vh;
+    width: 100%;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: $earlyRetirement;
+    border-bottom: 1px solid $lightWhite;
+    &__video {
+        position: absolute;
+        top: -16%;
+        left: 0;
+        -webkit-transform: translate(0, 0);
+        transition: transform 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
+        transform: translate(0, 0);
+        max-width: 100vw;
+        height: 100vh;
+        @add-mixin atSmall {}
+        @add-mixin atMedium {
+            -webkit-transform: translate(50%, 0);
+            transform: translate(50%, 0);
+        }
+        @add-mixin atLarge {
+            -webkit-transform: translate(200%, 0);
+            transform: translate(200%, 0);
+        }
     }
-    @add-mixin atLarge {
-        margin-top: -67px;
-    }
+    @add-mixin atMedium {}
+    @add-mixin atLarge {}
     &__text-content {
         position: absolute;
         top: 60%;
@@ -23,12 +45,6 @@
             top: 45%;
         }
     }
-    &--video {
-        position: absolute;
-        top: 0;
-        width: 100%;
-        height: 100%;
-    }
     &__img {
         display: inline-block;
         width: 100vw;
@@ -40,8 +56,8 @@
         width: 20px;
         height: auto;
         &--box {
-            width: 20px;
-            background-color: $mainWhite;
+            width: 15px;
+            background-color: $mainGrey;
             border-radius: 15px;
         }
     }
@@ -57,11 +73,11 @@
         }
         @add-mixin atMedium {
             font-size: 1.8rem;
-            margin-left: 5rem;
+            margin-left: 1rem;
         }
         @add-mixin atLarge {
             font-size: 2rem;
-            margin-left: 5rem;
+            margin-left: 1rem;
         }
     }
     &__subtitle {
@@ -87,10 +103,22 @@
         background-color: $lightWhite;
         opacity: 0.8;
         width: 70%;
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         margin: 0 5rem 0 5rem;
         @add-mixin atLarge {
             left: 50px;
         }
     }
+}
+
+.mind {
+    color: $lightBlue;
+}
+
+.body {
+    color: $Lime;
+}
+
+.spirit {
+    color: $lightPurple;
 }
