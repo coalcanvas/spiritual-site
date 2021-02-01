@@ -6,13 +6,17 @@
     top: 5%;
     height: auto;
     width: 150px;
-    color: rgba(250, 255, 249, 0.438);
+    color: $mainWhite;
     text-decoration: none;
-    border-radius: 5px;
+    border-radius: 20px;
     padding: 0.5rem 0.5rem;
     display: inline-block;
     &--white {
         background-color: $lightWhite;
+    }
+    &--black {
+        background-color: $mainBlack;
+        margin-left: 20px;
     }
     &--transparent {
         background-color: transparent;

@@ -1,0 +1,22 @@
+.member-area {
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    &__form {
+        align-items: baseline;
+        flex: 2;
+        display: flex;
+    }
+    &__input {
+        flex: 1;
+        height: 30px;
+        border-radius: 20px;
+        box-shadow: inset $boxShadow;
+        justify-content: center;
+        align-items: baseline;
+    }
+    &__error {
+        color: red;
+    }
+}
