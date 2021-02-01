@@ -2,17 +2,18 @@ import "../styles/styles.css";
 import "normalize.css";
 import "lazysizes";
 import "./modules/ls.respimg.js";
-import RevealOnScroll from "./modules/scrollReveal.js";
-import MobileMenu from "./modules/mobileMenu.js";
+import scrollReveal from "./modules/scrollReveal.js";
+import mobileMenu from "./modules/mobileMenu.js";
 import stickyHeader from "./modules/stickyHeader.js";
-import MemberArea from "./modules/memberArea.js";
+import memberArea from "./modules/memberArea.js";
+import Modal from "./modules/Modal";
 
-new MemberArea();
-new StickyHeader();
-new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
-new RevealOnScroll(document.querySelectorAll(".story-item"), 50);
-new MobileMenu();
-let modal;
+new memberArea();
+new stickyHeader();
+new scrollReveal(document.querySelectorAll(".feature-item"), 75);
+new scrollReveal(document.querySelectorAll(".story-item"), 50);
+new mobileMenu();
+let modal = new Modal();
 
 document.querySelectorAll(".open-modal").forEach((el) => {
   el.addEventListener("click", (e) => {
