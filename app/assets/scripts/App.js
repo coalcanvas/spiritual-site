@@ -1,13 +1,13 @@
 import "../styles/styles.css";
 import "lazysizes";
 import "./modules/ls.respimg.js";
-import ScrollReveal from "./modules/ScrollReveal.js";
+import RevealOnScroll from "./modules/RevealOnScroll.js";
 import MobileMenu from "./modules/MobileMenu.js";
 import StickyHeader from "./modules/StickyHeader.js";
 
 new StickyHeader();
-new ScrollReveal(document.querySelectorAll(".feature-item"), 75);
-new ScrollReveal(document.querySelectorAll(".story-item"), 50);
+new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
+new RevealOnScroll(document.querySelectorAll(".story-item"), 50);
 new MobileMenu();
 let modal;
 

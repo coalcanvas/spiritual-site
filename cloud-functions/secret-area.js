@@ -26,6 +26,7 @@ exports.handler = function (event, context, callback) {
   } else {
     callback(null, {
       statusCode: 401,
+      body: "Unauthorized",
     });
   }
 };
