@@ -1,11 +1,14 @@
 import "../styles/styles.css";
+import "normalize.css";
 import "lazysizes";
 import "./modules/ls.respimg.js";
 import RevealOnScroll from "./modules/RevealOnScroll.js";
 import MobileMenu from "./modules/MobileMenu.js";
 import StickyHeader from "./modules/StickyHeader.js";
 import ScrollListener from "./modules/ScrollListener.js";
+import MemberArea from "./modules/MemberArea.js";
 
+new MemberArea();
 new ScrollListener();
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);

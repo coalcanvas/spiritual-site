@@ -1,6 +1,7 @@
 exports.handler = function (event, context, callback) {
   const memberContent = `
-    <h3>Welcome to the <a href="./members-area.html">member's area</a>!</h3>
+    <h3>Hello, new member!</h3>
+    <h3>Welcome to the <a href="./members-area.html">member's area</a>! Each member is entitled to enter our game programme.</h3>
     <ul>Here're the game rules: </ul>
     <li>Each member belongs to a <a href="./guilds.html">guild(3)</a>. </li>
     <li>Each guild member serves a <a href="./roles.html">role(5)</a>.</li>
