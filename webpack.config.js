@@ -88,8 +88,8 @@ if (currentTask == "build") {
   postCSSPlugins.push(require("cssnano"));
   config.output = {
     filename: "[name].[hash].js",
+    chunkFilename: "[name].[chunkhash].js",
     path: path.resolve(__dirname, "docs"),
-    chunkFilename: "[name].[hash].js",
   };
   config.mode = "production";
   config.optimization = {
