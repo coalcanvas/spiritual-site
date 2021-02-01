@@ -1,7 +1,7 @@
 import throttle from "lodash/throttle";
 import debounce from "lodash/debounce";
 
-class StickyHeader {
+class stickyHeader {
   constructor() {
     this.siteHeader = document.querySelector(".site-header");
     this.pageSections = document.querySelectorAll(".page-section");
@@ -63,4 +63,4 @@ class StickyHeader {
     }
   }
 }
-export default StickyHeader;
+export default stickyHeader;

@@ -1,4 +1,4 @@
-class MobileMenu {
+class mobileMenu {
   constructor() {
     this.menuIcon = document.querySelector(".site-header__hamburger");
     this.menuContent = document.querySelector(".site-header__menu-content");
@@ -15,4 +15,4 @@ class MobileMenu {
   }
 }
 
-export default MobileMenu;
+export default mobileMenu;

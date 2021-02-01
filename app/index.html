@@ -3,7 +3,7 @@
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <link rel="preconnect" media="screen" href="https://fontlibrary.org/face/modulo" type="text/css" />
+    <link rel="stylesheet" media="screen" href="https://fontlibrary.org/face/modulo" type="text/css" />
     <link rel="shortcut icon" type="image/png" href="./assets/images/icons/slicesofzen2.png" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" integrity="sha512-bLT0Qm9VnAYZDflyKcBaQ2gg0hSYNQrJ8RilYldYQ1FxQYoCLtUjuuRuZo+fjqhx/qtq/1itJ0C2ejDxltZVFg==" crossorigin="anonymous"></script>
@@ -47,9 +47,11 @@
     </header>
 
     <div class="large-hero ">
-        <video class="large-hero__video" autoplay loop muted playsinline>
-<source src="https://player.vimeo.com/external/412186615.sd.mp4?s=594d158e4c5e40c4263e6392313d0a9413679ec9&amp;profile_id=165&amp;oauth2_token_id=57447761" type="video/mp4">
-</video>
+        <picture>
+            <img srcset="https://images.pexels.com/videos/4250244/pexels-photo-4250244.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500 1x, https://images.pexels.com/videos/4250244/pexels-photo-4250244.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=2&amp;w=500 2x"
+                class="large-hero__img" alt="Time Lapse Of Sky Over Mountain" src="https://images.pexels.com/videos/4250244/pexels-photo-4250244.jpeg?auto=compress&amp;cs=tinysrgb&amp;dpr=1&amp;w=500">
+
+        </picture>
         <div class="large-hero__text-content ">
             <div class="wrapper ">
                 <h1 class="large-hero__title ">
@@ -312,7 +314,7 @@
                             </p>
                         </div>
                     </footer>
-
+                    <script src="bundled.js"></script>
 
 </body>
 

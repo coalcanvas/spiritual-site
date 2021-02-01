@@ -1,4 +1,4 @@
-class MemberArea {
+class memberArea {
   constructor() {
     this.injectHTML();
   }
@@ -21,4 +21,4 @@ class MemberArea {
     );
   }
 }
-export default MemberArea;
+export default memberArea;

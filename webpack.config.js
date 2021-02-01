@@ -29,9 +29,7 @@ let cssConfig = {
     {
       loader: "postcss-loader",
       options: {
-        postcssOptions: {
-          plugins: postCSSPlugins,
-        },
+        plugins: postCSSPlugins,
       },
     },
   ],
@@ -86,25 +84,24 @@ if (currentTask == "build") {
       },
     },
   });
+  cssConfig.use.unshift(MiniCssExtractPlugin.loader);
+  postCSSPlugins.push(require("cssnano"));
+  config.output = {
+    filename: "[name].[hash].js",
+    path: path.resolve(__dirname, "docs"),
+    chunkFilename: "[name].[hash].js",
+  };
+  config.mode = "production";
+  config.optimization = {
+    splitChunks: { chunks: "all" },
+  };
+  config.plugins.push(
+    new CleanWebpackPlugin(),
+    new MiniCssExtractPlugin({
+      filename: "styles.[hash].css",
+      chunkFilename: "[id].css",
+    }),
+    new RunAfterCompile()
+  );
 }
-cssConfig.use.unshift(MiniCssExtractPlugin.loader);
-postCSSPlugins.push(require("cssnano"));
-config.output = {
-  filename: "[name].[hash].js",
-  path: path.resolve(__dirname, "docs"),
-  chunkFilename: "[name].[hashchunk].js",
-};
-config.mode = "production";
-config.optimization = {
-  splitChunks: { chunks: "all" },
-};
-config.plugins.push(
-  new CleanWebpackPlugin(),
-  new MiniCssExtractPlugin({
-    filename: "styles.[hashchunk].css",
-    chunkFilename: "[id].css",
-  }),
-  new RunAfterCompile()
-);
-
 module.exports = config;
