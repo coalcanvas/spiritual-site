@@ -1,6 +1,7 @@
 {
     "name": "spiritual-site",
     "version": "1.0.0",
+    "main": "webpack.config.js",
     "scripts": {
         "dev": "webpack-dev-server",
         "build": "webpack",
@@ -10,11 +11,14 @@
         "axios": "^0.21.1",
         "lazysizes": "^5.3.0",
         "lodash": "^4.17.20",
-        "normalize.css": "^8.0.1"
+        "normalize.css": "^8.0.1",
+        "react": "^17.0.1",
+        "react-dom": "^17.0.1"
     },
     "devDependencies": {
         "@babel/core": "^7.7.2",
         "@babel/preset-env": "^7.7.1",
+        "@babel/preset-react": "^7.12.10",
         "autoprefixer": "^9.6.5",
         "babel-loader": "^8.0.6",
         "clean-webpack-plugin": "^3.0.0",

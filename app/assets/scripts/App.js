@@ -6,6 +6,8 @@ import MobileMenu from "./modules/MobileMenu.js";
 import StickyHeader from "./modules/StickyHeader.js";
 import memberArea from "./modules/MemberArea.js";
 
+// import react components
+
 new memberArea();
 new StickyHeader();
 new RevealOnScroll(document.querySelectorAll(".feature-item"), 75);
