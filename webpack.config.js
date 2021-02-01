@@ -47,7 +47,7 @@ let pages = fse
     });
   });
 let config = {
-  entry: "./app/assets/scripts/app.js",
+  entry: "./app/assets/scripts/App.js",
   plugins: pages,
   module: {
     rules: [cssConfig],

@@ -2,7 +2,7 @@
     padding: 10px 0;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 100vw;
     position: fixed;
     z-index: 2;
     transition: background-color 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -31,6 +31,7 @@
         backdrop-filter: blur(3px);
     }
     &__brand-name {
+        margin-top: 0;
         left: 10%;
         font-family: "Londrina Solid", cursive;
         padding-left: 80px;
@@ -46,26 +47,13 @@
     }
     &__btn-container {
         box-shadow: $boxShadow;
-        width: 200px;
-        margin-left: 90px;
-        margin-top: -53px;
+        width: 150px;
+        margin-left: 120px;
+        margin-top: -80px;
         @add-mixin atSmall {}
         @add-mixin atMedium {
             float: right;
         }
-    }
-    &__btn {
-        padding: 2px 2px;
-        justify-self: center;
-        padding-right: 20px;
-        margin-left: -20px;
-        border-radius: 10px;
-        margin-top: -60px;
-        right: 5%;
-        width: 100px;
-        box-sizing: content-box;
-        text-decoration: none;
-        color: $lightBlack;
     }
     &__logo {
         top: 0;
@@ -102,7 +90,8 @@
         position: absolute;
         top: 10px;
         right: 10px;
-        z-index: 10;
+        z-index: 30;
+        cursor: pointer;
         &::before {
             content: "";
             position: absolute;
@@ -180,4 +169,18 @@
             transform: scale(1);
         }
     }
+}
+
+&__btn {
+    padding: 2px 2px;
+    justify-self: center;
+    padding-right: 20px;
+    margin-left: -20px;
+    border-radius: 10px;
+    margin-top: -60px;
+    right: 5%;
+    width: 100px;
+    box-sizing: content-box;
+    text-decoration: none;
+    color: $lightBlack;
 }

@@ -1,4 +1,4 @@
-class mobileMenu {
+class MobileMenu {
   constructor() {
     this.menuIcon = document.querySelector(".site-header__hamburger");
     this.menuContent = document.querySelector(".site-header__menu-content");
@@ -6,13 +6,14 @@ class mobileMenu {
     this.events();
   }
   events() {
-    this.menuIcon.addEventListener("click", () => this.toggleMenu());
+    this.menuIcon.addEventListener("click", () => this.toggleTheMenu());
+    console.log("clicked");
   }
-  toggleMenu() {
+  toggleTheMenu() {
     this.menuContent.classList.toggle("site-header__menu-content--is-visible");
     this.siteHeader.classList.toggle("site-header--is-expanded");
     this.menuIcon.classList.toggle("site-header__hamburger--close-x");
   }
 }
 
-export default mobileMenu;
+export default MobileMenu;

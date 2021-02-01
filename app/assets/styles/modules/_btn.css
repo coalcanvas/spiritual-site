@@ -1,6 +1,7 @@
 .btn {
     background-color: transparent;
     box-shadow: $boxShadow;
+    cursor: pointer;
     margin-top: 20px;
     top: 5%;
     height: auto;

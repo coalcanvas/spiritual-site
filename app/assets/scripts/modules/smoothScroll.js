@@ -1,4 +1,4 @@
-class smoothScroll {
+class SmoothScroll {
   constructor() {
     this.targetAnchor = document.querySelector(targetID);
     this.links = document.querySelectorAll(".scroll");
@@ -42,4 +42,4 @@ class smoothScroll {
     }, 100);
   }
 }
-export default smoothScroll;
+export default SmoothScroll;

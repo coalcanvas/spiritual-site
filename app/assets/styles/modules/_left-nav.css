@@ -59,14 +59,14 @@ nav.main-menu.expanded {
 }
 
 .main-menu>ul {
-    margin: 14px 0;
+    margin: 14px -30px;
 }
 
 .main-menu li {
     position: relative;
     padding-top: 3px;
     padding-bottom: 20px;
-    padding-left: 8px;
+    padding-left: -20px;
     display: block;
     width: 190px;
 }

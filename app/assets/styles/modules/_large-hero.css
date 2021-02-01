@@ -1,6 +1,6 @@
 .large-hero {
     position: relative;
-    height: 75vh;
+    height: 50vh;
     width: 100%;
     overflow-x: hidden;
     overflow-y: hidden;
@@ -9,23 +9,30 @@
     background-size: cover;
     background-image: $earlyRetirement;
     border-bottom: 1px solid $lightWhite;
-    &__video {
+    @add-mixin atMedium {
+        height: 70vh;
+    }
+    @add-mixin atLarge {
+        height: 75vh;
+    }
+    &__img {
         position: absolute;
-        top: -16%;
+        top: 0;
         left: 0;
         -webkit-transform: translate(0, 0);
         transition: transform 0.4s cubic-bezier(0.47, 0, 0.745, 0.715);
         transform: translate(0, 0);
         max-width: 100vw;
-        height: 100vh;
         @add-mixin atSmall {}
         @add-mixin atMedium {
             -webkit-transform: translate(50%, 0);
             transform: translate(50%, 0);
+            height: 100%;
         }
         @add-mixin atLarge {
-            -webkit-transform: translate(200%, 0);
-            transform: translate(200%, 0);
+            -webkit-transform: translate(200%, 0) scale(1.2);
+            transform: translate(200%, 0) scale(1.2);
+            height: 100%;
         }
     }
     @add-mixin atMedium {}
@@ -45,12 +52,6 @@
             top: 45%;
         }
     }
-    &__img {
-        display: inline-block;
-        width: 100vw;
-        height: auto;
-        transform: scale(0.8, 0.8);
-    }
     &__logo {
         vertical-align: middle;
         width: 20px;
@@ -64,7 +65,7 @@
     &__title {
         margin: 0;
         background-color: $nightClub2;
-        font-family: "ModuloRegular";
+        font-family: "Londrina Solid", cursive;
         color: $lightWhite;
         font-weight: 100;
         font-size: 1.5rem;
@@ -84,7 +85,7 @@
         margin: 10px;
         margin-left: 1rem;
         color: $lightWhite;
-        font-family: "ModuloRegular";
+        font-family: "Londrina Solid", cursive;
         font-weight: 300;
         font-size: 1rem;
     }

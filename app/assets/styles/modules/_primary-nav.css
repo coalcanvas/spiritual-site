@@ -2,11 +2,11 @@
     margin-top: -25px;
     &--pull-right {
         @add-mixin atMedium {
-            padding-top: 0;
+            margin-top: -55px;
             float: right;
         }
         @add-mixin atLarge {
-            padding-top: 0;
+            margin-top: -55px;
             float: right;
         }
     }
@@ -14,17 +14,19 @@
         margin: 0;
         padding: 0;
         @add-mixin clearfix;
+        @add-mixin atMedium {
+            margin-top: 0;
+            margin-right: 90px;
+        }
     }
     li {
         list-style: none;
         margin-top: 40px;
-        padding-right: 20px;
         display: inline-block;
         @add-mixin atMedium {
             margin-top: 0;
-            padding-right: 50px;
+            margin-right: 70px;
             float: left;
-            display: block;
         }
         @add-mixin atLarge {
             float: left;
