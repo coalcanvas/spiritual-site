@@ -32,7 +32,7 @@
     }
     &__brand-name {
         left: 10%;
-        font-family: "ModuloRegular";
+        font-family: "Londrina Solid", cursive;
         padding-left: 80px;
         transform: scale(1.05);
         transition: transform 0.3s 0.7s cubic-bezier(0.47, 0, 0.745, 0.715);
@@ -70,7 +70,7 @@
     &__logo {
         top: 0;
         left: 20%;
-        font-family: "ModuloRegular";
+        font-family: "Londrina Solid", cursive;
         display: inline-block;
         flex-direction: column;
         position: absolute;
